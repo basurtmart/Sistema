@@ -18,7 +18,7 @@ namespace Sistema.Controllers
             _context = context;
         }
 
-        // GET: Categorias
+        // GET: Categorias 
         public async Task<IActionResult> Index(string sortOrder, string currentFilter, string searchString, int? page)
         {
             ViewData["NombreSortParm"] = String.IsNullOrEmpty(sortOrder) ? "nombre_desc" : "";
