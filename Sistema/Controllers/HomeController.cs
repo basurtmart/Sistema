@@ -24,7 +24,7 @@ namespace Sistema.Controllers
 
         public IActionResult Contact()
         {
-            ViewData["Message"] = "Dtalle del contacto.";
+            ViewData["Message"] = "Detalles del contacto.";
 
             return View();
         }

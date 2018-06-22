@@ -12,7 +12,7 @@ namespace Sistema.Data
         {
             context.Database.EnsureCreated();
 
-            //Buscar si existen registro en la tabla categoria
+            //Buscar si existen registro en la tabla categoría
             if (context.Categoria.Any())
             {
                 return;
@@ -21,7 +21,7 @@ namespace Sistema.Data
             var categorias = new Categoria[]
             {
                 new Categoria {Nombre = "Programación", Descripcion = "Curso de programación", Estado = true},
-                new Categoria {Nombre = "Diseño", Descripcion = "Curso de diseño grafico", Estado = true}
+                new Categoria {Nombre = "Diseño gráfico", Descripcion = "Curso de diseño gráfico", Estado = true}
             };
 
             foreach (Categoria c in categorias)
